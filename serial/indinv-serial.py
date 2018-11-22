@@ -21,17 +21,16 @@ def mining():
         sub = sub.lower()
         subMax = sub.upper()
         subCap = sub.capitalize()
-
+        
+        #calculando el numero que esta la palabra
         dataFinal["frec"] = dataFinal["content"].str.count(sub) + dataFinal["content"].str.count(subMax) + dataFinal["content"].str.count(subCap)
+        #ordenando de mayor a menor por numero de palabra
         dataFinal = dataFinal.sort_values(by='frec',ascending=False)
+        
+        #imprimiendo
         print(dataFinal.iloc[0:10,[3,0,1]])
     except:
         mining()
         
-
-
-def insertList(a):
-    for i in a:
-        print(i)
 
 mining()
