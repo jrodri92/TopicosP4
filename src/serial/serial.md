@@ -6,13 +6,13 @@
 
 ```
 $ sudo apt-get update
-$ sudo apt-get install python
+$ sudo apt-get install python3
 ```
 
 ### instalar pip
 
 ```
-$ sudo apt-get install python-pip
+$ sudo apt-get install python-pip3
 ```
 
 ### instalar libreria pandas con pip
@@ -32,6 +32,11 @@ $ pip install numpy
 En la carpeta src/serial ejecutar
 
 ```
-$ python indinv-serial.py
+$ python3 indinv-serial.py
+```
+
+En el cluster de hpc - src/serial ejecutar
+
+```
 ```
 
