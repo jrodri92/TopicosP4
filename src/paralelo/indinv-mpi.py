@@ -8,6 +8,13 @@ def indinv():
     rank = comm.Get_rank()
     direc = "/opt/datasets/articles" + str(rank+1) + ".csv"
 
+    #verificando el numero de procesos activos
+    if(rank == 0 and comm.size() > 3):
+        print("ALERTA: Solo se estan utilizando 3 procesos")
+    elif comm.size() < 3:
+        print("ERROR: procesos insuficientes, intente asignando 3")
+        return 1
+
     #ciclo infinito
     while(True):
         #pedir la palabra y enviarla
