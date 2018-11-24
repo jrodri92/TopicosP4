@@ -13,12 +13,21 @@ Proceso parcial
 
 ### Descomposición del dominio:
 Encontramos:
-* Lectura de archivos (Entrada)
+* Lectura de archivos (Entrada):
   En este punto, el proceso de lectura de archivos según la propuesta mencionada en la introducción del ducumento, cada archivo sera leido y despues procesado por un procesado como se muestra en la propuesta 2 de la figura 1.
-* Archivos con las 10 mayores frecuencias
+* Archivos con las 10 mayores frecuencias: 
   Posterior del procesamiento de los archivos y encontrado las 10 mejores frecuencias en cada uno, se hace una ultima comparación con el objetivo de generar solo las 10 mejores frecuencias entre todo los archivos. Esto puede ser evidenciado en la figura 2.
 
 ### Descomposición funcional:
+1. Ingreso de la palabra a buscar
+2. Generar posibles combinaciones de la palabra, por ejemplo si se ingresa "casa" los terminos a buscar serian "casa", "Casa" y "CASA". 
+3. Lectura de archivos que contiene las noticias
+4. Conteo de palabras por noticia.
+5. Generación de las 10 noticias con el mayor numero de palabras por archivo
+6. Recopilación de datos por cada archivo
+7. Generación de las 10 noticias con el mayor numero de palabras por todos los archivos.
+8. Impresión de resultados. 
+
 
 ## Asignación de tareas
 
