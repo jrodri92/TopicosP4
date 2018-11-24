@@ -3,13 +3,13 @@
 Este caso se puede abordar desde diferentes enfoques en razon a la finalidad del programa segun la información.
 Un primer enfoque de paralelismo se presenta en que cada columna debe ser contada de manera independiente, es decir, su resultado no depende del la información de la celda anterior, es asi como se puede considerar que segun la cantidad de celdas en la columna un numero determinado de procesadores se encargue del conteo de la palabra en cada noticia. El otro enfoque se da a partir de la cantidad de archivos a analizar, es por esto que se puede descomponer el numero de procesadores a utlizar basados en la cantidad de archivos a analizar basados en este problema especifico.
 
-![Texto Alt](/src/paralelo/propuesta.png "Propuestas")
+![Texto Alt](/propuesta.png "Propuestas")
 
 La solución implementada se sustenta bajo la segunda propuesta, esta propuesta será desarrollada en base a las 4 faces que propone la metodologia PCAM.
 
 ## Descomposición de tareas
 Proceso parcial 
-![Texto Alt](/src/paralelo/proceso.png "Propuestas")
+![Texto Alt](/proceso.png "Propuestas")
 
 ### Descomposición del dominio:
 Encontramos:
