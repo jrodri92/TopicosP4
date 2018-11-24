@@ -36,7 +36,9 @@ if rank <= 2:
         data = data.iloc[0:10,[3,0,1]]
         data1 = comm.recv(source = 1)
         data2 = comm.recv(source = 2)
-
+        
         data = pd.concat([data, data1, data2])
-        print( "------------0------------")
-        print (data)
+        data = data.sort_values(by='frec',ascending=False)
+        
+        with pd.option_context('display.max_rows', None, 'display.max_columns', None):     
+            print(data.iloc[0:10])
