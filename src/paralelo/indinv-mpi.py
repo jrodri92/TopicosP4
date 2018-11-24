@@ -30,15 +30,24 @@ if rank <= 2:
     
     #organizando de menor a mayor el archivo
     data = data.sort_values(by='frec',ascending=False)
+
+    # enviando al rank 0 las 10 primeras filas de la data
     if rank != 0:
         comm.send(data.iloc[0:10,[3,0,1]], dest = 0)
+    
+    #reciviendo las tablas
     else:
+
         data = data.iloc[0:10,[3,0,1]]
         data1 = comm.recv(source = 1)
         data2 = comm.recv(source = 2)
         
+        #uniendo las tres tablas
         data = pd.concat([data, data1, data2])
+
+        #ordenando de mayor a menor por frecuencia
         data = data.sort_values(by='frec',ascending=False)
         
+        #mostrar los datos en pantalla
         with pd.option_context('display.max_rows', None, 'display.max_columns', None):     
             print(data.iloc[0:10])
