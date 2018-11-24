@@ -31,14 +31,12 @@ if rank <= 2:
     #organizando de menor a mayor el archivo
     data = data.sort_values(by='frec',ascending=False)
     if rank != 0:
-        comm.send(data.iloc[0:10], dest = 0)
+        comm.send(data.iloc[0:10,[3,0,1]], dest = 0)
     else:
-        data = data.iloc[0:10]
+        data = data.iloc[0:10,[3,0,1]]
         data1 = comm.recv(source = 1)
         data2 = comm.recv(source = 2)
+
+        data = pd.concat([data, data1, data2])
         print( "------------0------------")
         print (data)
-        print ("-------------1--------------")
-        print (data1)
-        print ("---------------------2---------------")
-        print (data2)
