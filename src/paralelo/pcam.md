@@ -5,9 +5,12 @@ Un primer enfoque de paralelismo se presenta en que cada columna debe ser contad
 
 ![Texto Alt](/src/paralelo/propuesta.png "Propuestas")
 
+La solución implementada se sustenta bajo la segunda propuesta, esta propuesta será desarrollada en base a las 4 faces que propone la metodologia PCAM.
 
-Para dar solucion
 ## Descomposición de tareas
+Proceso parcial 
+![Texto Alt](/src/paralelo/proceso.png "Propuestas")
+
 ### Descomposición del dominio:
 ### Descomposición funcional:
 
