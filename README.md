@@ -1,4 +1,9 @@
-# TopicosP4
+# PROYECTO 4 - TOPICOS EN TELEMATICA
+## JUAN CAMILO RODRIGUEZ MONTOYA
+## DAVID FELIPE LEMUS GIRALDO
+## UNIVERSIDAD EAFIT
+## 2018-2
+
 ## Contexto
 La minería o analítica de texto, son un conjunto de modelos, técnicas, algoritmos y
 tecnologías que permiten procesar texto de naturaleza NO ESTRUCTURADA.
