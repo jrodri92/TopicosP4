@@ -1,0 +1,12 @@
+from mpi4py import MPI
+import pandas as pd
+
+comm = MPI.COMM_WORLD
+sub = ""
+
+if comm.Get_rank() == 0:
+    sub = input("Ingrese la palabra, para salir ingrese \"/\" : " )
+    comm.send(sub,dest=1)
+else:
+    sub = comm.recv(source = 0)
+    print(sub)
