@@ -1,0 +1,7 @@
+## Partición
+
+## Comunicación
+
+## Aglomeración
+
+## Mapeo
