@@ -9,9 +9,9 @@ direc = "/opt/datasets/articles" + str(rank+1) + ".csv"
 #inicializando el archivo correspondiente
 if rank <= 2:
     data = pd.read_csv(direc,usecols=[1,2,9])
-    data["frec"] = dataFinal["content"].str.count(sub.upper()) 
-    + dataFinal["content"].str.count(sub.lower()) 
-    + dataFinal["content"].str.count(sub.capitalize())
+    data["frec"] = data["content"].str.count(sub.upper()) 
+    + data["content"].str.count(sub.lower()) 
+    + data["content"].str.count(sub.capitalize())
 
 #pedir la palabra
 if rank == 0:
