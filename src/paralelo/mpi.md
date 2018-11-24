@@ -1,4 +1,4 @@
-# Versión serial indiv
+# Versión paralela indiv (con MPI)
 
 ## Pre-requisitos
 
@@ -105,13 +105,9 @@ SI le pide password alguno de los 2 slaves anteriores, por favor realice el paso
 
 ## Ejecutar
 
-    En la carpeta src/paralelo ejecutar
-
-        ```
-        $ python3 indinv-serial.py
-        ```
 
     En el cluster de hpc - src/serial ejecutar
 
         ```
+	$ mpiexec -f hosts_mpi -np 3 /opt/anaconda3/bin/python3 ./indinv-mpi.py
         ```
