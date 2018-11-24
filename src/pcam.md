@@ -1,8 +1,10 @@
 # DISEÑO REALIZADO BAJO LA METODOLOGIA PCAM
 
-## Partición
+## Descomposición de tareas
+### Descomposición del dominio:
+### Descomposición funcional:
 
-## Comunicación
+## Asignación de tareas
 
 ## Aglomeración
 
