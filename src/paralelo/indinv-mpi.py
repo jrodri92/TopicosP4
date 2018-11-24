@@ -3,15 +3,15 @@ import pandas as pd
 
 #inicializacion de variables
 comm = MPI.COMM_WORLD
-rank = comm-Get_rank()
-direc = "/opt/datasets/articles" + str(rank) + ".csv"
+rank = comm.Get_rank()
+direc = "/opt/datasets/articles" + str(rank+1) + ".csv"
 
 #inicializando el archivo correspondiente
 if rank <= 2:
     data = pd.read_csv(direc,usecols=[1,2,9])
     data["frec"] = dataFinal["content"].str.count(sub.upper()) 
-            + dataFinal["content"].str.count(sub.lower()) 
-            + dataFinal["content"].str.count(sub.capitalize())
+    + dataFinal["content"].str.count(sub.lower()) 
+    + dataFinal["content"].str.count(sub.capitalize())
 
 #pedir la palabra
 if rank == 0:
@@ -33,9 +33,9 @@ if rank <= 2:
         data = data.iloc[0:10]
         data1 = comm.recv(source = 1)
         data2 = comm.recv(source = 2)
-        print "------------0------------"
-        print data
-        print "-------------1--------------"
-        print data1
-        print "---------------------2---------------"
-        print data2
+        print( "------------0------------")
+        print (data)
+        print ("-------------1--------------")
+        print (data1)
+        print ("---------------------2---------------")
+        print (data2)
