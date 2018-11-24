@@ -2,7 +2,7 @@ from mpi4py import MPI
 import pandas as pd
 
 
-def indinv-mpi():
+def indinv():
     #inicializacion de variables
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
