@@ -28,6 +28,5 @@ title = título de la noticia.
  
  3. indinv-mpi - Desarrollado por Juan Camilo Rodriguez
  
- ###### Nota: 
- ####### En cada directio se encuentra su respectiva forma de compilación y ejecución
+ ###### Nota: En cada directorio se encuentra su respectiva forma de compilación y ejecución
  
