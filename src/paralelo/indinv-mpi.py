@@ -26,9 +26,7 @@ if rank <= 2:
     data = pd.read_csv(direc,usecols=[1,2,9])
 
     #calculando la frecuencia de la palabra
-    data["frec"] = data["content"].str.count(sub.upper()) 
-    + data["content"].str.count(sub.lower()) 
-    + data["content"].str.count(sub.capitalize())
+    data["frec"] = data["content"].str.count(sub.upper()) + data["content"].str.count(sub.lower()) + data["content"].str.count(sub.capitalize())
     
     #organizando de menor a mayor el archivo
     data = data.sort_values(by='frec',ascending=False)

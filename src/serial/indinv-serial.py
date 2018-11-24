@@ -5,6 +5,9 @@ def mining():
         sub = ""
         while(sub != "/"):
             sub = input("Ingrese la palabra, para salir ingrese \"/\" : " )
+            
+            if sub == "/":
+                return 0
 
             #Abiendo documentos
             data = pd.read_csv("/opt/datasets/articles1.csv",usecols=[1,2,9])
