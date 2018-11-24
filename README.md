@@ -22,12 +22,12 @@ title = título de la noticia.
  
 # Productos
 
- 1. indinv-serial
- Desarrollado por Juan Camilo Rodriguez M y David Felipe Lemus G
+ 1. indinv-serial - Desarrollado por Juan Camilo Rodriguez M y David Felipe Lemus G
  
- 2. pcam.md
- Elaborado por David Lemus
+ 2. pcam.md - Elaborado por David Lemus
  
- 3. indinv-mpi
- Desarrollado por Juan Camilo Rodriguez
+ 3. indinv-mpi - Desarrollado por Juan Camilo Rodriguez
+ 
+ ###### Nota: 
+ ####### En cada directio se encuentra su respectiva forma de compilación y ejecución
  
