@@ -19,10 +19,15 @@ noticias más relevantes. Listar máx 10 <frec,doc_id,title>.
 frec = frecuencia de la palabra en la noticia <id>
 id = id de la noticia
 title = título de la noticia.
-### Ej:
-$ run-program.sh
-Entrar la palabra (\quit para salir): house
-10,17283, House Republicans Fret About Winning Their Health Care Suit
-8,17295, Mar-a-Lago, the Future Winter White House and Home of the Calmer
-  
+ 
 # Productos
+
+ 1. indinv-serial
+ Desarrollado por Juan Camilo Rodriguez M y David Felipe Lemus G
+ 
+ 2. pcam.md
+ Elaborado por David Lemus
+ 
+ 3. indinv-mpi
+ Desarrollado por Juan Camilo Rodriguez
+ 
