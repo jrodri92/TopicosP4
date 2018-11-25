@@ -45,8 +45,8 @@ Para el tercer paso, es necesario entender la posibilidad de particionar las tar
 
 ## Mapeo
 
-### ![Texto Alt](/diMaEs.png "Esquema Maestro-Esclavo")
-Figura 3. Esquema Maestro-Esclavo
+### ![Texto Alt](/disMaEs.png "Esquema Maestro-Esclavo")
+Figura 4. Esquema Maestro-Esclavo
 
 En esta etapa se definen y reestructuran las tareas que seran realizadas por cada nucleo, en la figura 4 se muestra un esquema donde se tiene un nodo maestro y 3 esclavos. En este caso el nodo maestro tendra a cargo el proceso de captar la palabra a buscar y a convertila en las diferentes posibilidades, el paso de las transformaciones a los nodos esclavos y a la recopilación de las frecuencias generadas por los nodos esclavos para que posterior dar las 10 mejores frecuencias. Los nodos esclavos tendrán la tarea de acceder, recopilar y analizar la frecuencia de la palabra ingresada en cada noticia y de recopilar las 10 mejores ordenadas de forma descendente. De esta manera, no se tiene comunicación entre los nos nodos esclavos con el fin de evitar la dependencia entre procesos.
 
