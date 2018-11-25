@@ -7,7 +7,7 @@ def indinv():
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
     direc = "/opt/datasets/articles" + str(rank+1) + ".csv"
-    size = comm.size()
+    size = comm.Get_size()
     #verificando el numero de procesos activos
     if(rank == 0 and size > 3):
         print("ERROR: Solo se estan utilizando 3 procesos")
