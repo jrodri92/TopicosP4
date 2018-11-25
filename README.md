@@ -1,6 +1,6 @@
 # PROYECTO 4 - TOPICOS EN TELEMATICA
-## JUAN CAMILO RODRIGUEZ MONTOYA
-## DAVID FELIPE LEMUS GIRALDO [VIDEO](https://youtu.be/bdrfGRt7zhI/ "VIDEO")
+## JUAN CAMILO RODRIGUEZ MONTOYA - [VIDEO](https://www.youtube.com/watch?v=9BXj0Wdb-Kc/ "VIDEO")
+## DAVID FELIPE LEMUS GIRALDO - [VIDEO](https://youtu.be/bdrfGRt7zhI/ "VIDEO")
 ## UNIVERSIDAD EAFIT
 ## 2018-2
 
@@ -30,8 +30,10 @@ title = título de la noticia.
  1. indinv-serial - Desarrollado por Juan Camilo Rodriguez M y David Felipe Lemus G
  
  2. pcam.md - Elaborado por David Lemus
+ [VIDEO](https://youtu.be/bdrfGRt7zhI/ "VIDEO")
  
  3. indinv-mpi - Desarrollado por Juan Camilo Rodriguez
+ [VIDEO](https://www.youtube.com/watch?v=9BXj0Wdb-Kc/ "VIDEO")
  
  ###### Nota: En cada directorio se encuentra su respectiva forma de compilación y ejecución
  
