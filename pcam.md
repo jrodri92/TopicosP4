@@ -38,7 +38,11 @@ Figura 3. Ilustraccion de tareas para el procesador
 
 ## Aglomeración
 
+Para el tercer paso, es necesario entender la posibilidad de particionar las tareas repetitivas pero independientes en diferentes procesadores, para asi obtener mejores velocidades en el momento de buscar la frecuencia de una palabra en una noticia, posterior a esto, recopilar estas frecuencias y definir las 10 con mayor numero.
+
 ## Mapeo
+
+En esta etapa se definen y reestructuran las tareas que seran realizadas por cada nucleo, en la figura 4 se muestra un esquema donde se tiene un nodo maestro y 3 esclavos. En este caso el nodo maestro tendra a cargo el proceso de captar la palabra a buscar y a convertila en las diferentes posibilidades, el paso de las transformaciones a los nodos esclavos y a la recopilación de las frecuencias generadas por los nodos esclavos para que posterior dar las 10 mejores frecuencias. Los nodos esclavos tendrán la tarea de acceder, recopilar y analizar la frecuencia de la palabra ingresada en cada noticia y de recopilar las 10 mejores. De esta manera, no se tiene comunicación entre los nos nods esclavos con el fin de evitar la dependencia entre procesos.
 
 
 
