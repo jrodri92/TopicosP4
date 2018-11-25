@@ -40,7 +40,7 @@
     para verlo en la carpeta src/paralelo/
 
         
-        $ cat mpi4py
+        $ cat hosts_mpi
         
 ### preparar el master y los esclavos (esta parte es tomada del documento Readme.md del laboratorio de MPI)
 autor original
@@ -105,7 +105,7 @@ SI le pide password alguno de los 2 slaves anteriores, por favor realice el paso
 ## Ejecutar
 
 
-    En el cluster de hpc - src/serial ejecutar
+    En el cluster de hpc - src/paralelo ejecutar
 
         
 	$ mpiexec -f hosts_mpi -np 3 /opt/anaconda3/bin/python3 ./indinv-mpi.py
