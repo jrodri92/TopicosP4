@@ -9,7 +9,7 @@ La solución implementada se sustenta bajo la segunda propuesta, esta propuesta 
 
 ## Descomposición de tareas
 Proceso parcial 
-![Texto Alt](/proceso.png "Propuestas")
+### ![Texto Alt](/proceso.png "Propuestas")
 
 ### Descomposición del dominio:
 Encontramos:
@@ -33,7 +33,9 @@ Haciendo el desglose funcional de las tareas encontramos las siguientes, este pr
 ## Asignación de tareas
 Siguiendo en linea de la fase de descomposición funcional se denota entonces segun la necesidad del problema, teniendo en cuenta la cantidad de datos y archivos a procesar, siguiendo entonces el estandar del mpi para definir un esquema de comunicación estructura de las funciones se identificaron entonces las siguientes funciones que deberan ser asignadas a un procesador o maquina esclava con el objetivo de aumentar el rendimiento.
 
-Imagen de procesador.
+### ![Texto Alt](/procesador.png "Propuestas")
+Figura 3. Ilustraccion de tareas para el procesador
+
 ## Aglomeración
 
 ## Mapeo
